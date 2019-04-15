@@ -27,7 +27,7 @@ public class testEbay {
 
         // 1-	Enter to Ebay
         driver.navigate().to("https://www.ebay.com/");
-        help.waitImplicit(driver, 10);
+        help.waitImplicit(driver, 20);
     }
 
 
@@ -83,16 +83,16 @@ public class testEbay {
         // 2-	Search for shoes
         home.sendKey_txt_search("shoes");
         home.click_btn_search();
-        help.waitImplicit(driver, 10);
+        help.waitImplicit(driver, 20);
 
 
         // 3-	Select brand PUMA
         results.click_opt_css_puma();
-        help.waitImplicit(driver, 10);
+        help.waitImplicit(driver, 20);
 
         // 4-	Select size 10
         results.click_opt_talla_10();
-        help.waitImplicit(driver, 10);
+        help.waitImplicit(driver, 20);
 
         // 5-	Print the number of results
         System.out.println(results.getText_lbl_count_result());
@@ -100,7 +100,7 @@ public class testEbay {
         // 6-	Order by price ascendant
         results.hover_sel_filter();
         results.click_filter_low_price();
-        help.waitImplicit(driver, 10);
+        help.waitImplicit(driver, 20);
 
         // 8-	Take the first 5 products with their prices and print them in console.
         double[] prices_lows = results.get_prices(num_products, currency);
@@ -126,16 +126,16 @@ public class testEbay {
         // 2-	Search for shoes
         home.sendKey_txt_search("shoes");
         home.click_btn_search();
-        help.waitImplicit(driver, 10);
+        help.waitImplicit(driver, 20);
 
 
         // 3-	Select brand PUMA
         results.click_opt_css_puma();
-        help.waitImplicit(driver, 10);
+        help.waitImplicit(driver, 20);
 
         // 4-	Select size 10
         results.click_opt_talla_10();
-        help.waitImplicit(driver, 10);
+        help.waitImplicit(driver, 20);
 
         // 5-	Print the number of results
         System.out.println(results.getText_lbl_count_result());
@@ -143,7 +143,7 @@ public class testEbay {
         // 6-	Order by price ascendant
         results.hover_sel_filter();
         results.click_filter_low_price();
-        help.waitImplicit(driver, 10);
+        help.waitImplicit(driver, 20);
         String[] titles_product = results.get_title(num_products);
         double[] prices_lows = results.get_prices(num_products, currency);
 
@@ -170,16 +170,16 @@ public class testEbay {
         // 2-	Search for shoes
         home.sendKey_txt_search("shoes");
         home.click_btn_search();
-        help.waitImplicit(driver, 10);
+        help.waitImplicit(driver, 20);
 
 
         // 3-	Select brand PUMA
         results.click_opt_css_puma();
-        help.waitImplicit(driver, 10);
+        help.waitImplicit(driver, 20);
 
         // 4-	Select size 10
         results.click_opt_talla_10();
-        help.waitImplicit(driver, 10);
+        help.waitImplicit(driver, 20);
 
         // 5-	Print the number of results
         System.out.println(results.getText_lbl_count_result());
@@ -187,7 +187,7 @@ public class testEbay {
         // 6-	Order by price ascendant
         results.hover_sel_filter();
         results.click_filter_low_price();
-        help.waitImplicit(driver, 10);
+        help.waitImplicit(driver, 20);
         String[] titles_product = results.get_title(num_products);
         double[] prices_lows = results.get_prices(num_products, currency);
 
